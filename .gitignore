@@ -2,3 +2,5 @@ mysqli_connect.php
 /.idea/
 .gitignore
 /kindeditor/
+/.idea
+/kindeditor
