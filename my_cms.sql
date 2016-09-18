@@ -1,0 +1,31 @@
+CREATE TABLE article
+(
+    id BIGINT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    title TINYTEXT NOT NULL,
+    author TINYTEXT NOT NULL,
+    content TEXT NOT NULL,
+    time DATE NOT NULL,
+    type BIGINT(20) NOT NULL
+);
+CREATE TABLE child_menu
+(
+    id BIGINT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    main_menu_id BIGINT(20) NOT NULL,
+    name TINYTEXT NOT NULL,
+    description MEDIUMTEXT,
+    is_used TINYINT(4) DEFAULT '0'
+);
+CREATE TABLE main_menu
+(
+    id BIGINT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name TINYTEXT NOT NULL,
+    description MEDIUMTEXT,
+    is_used TINYINT(11) DEFAULT '0'
+);
+CREATE TABLE user
+(
+    id BIGINT(20) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    uaername TINYTEXT NOT NULL,
+    password TINYTEXT NOT NULL,
+    is_used TINYINT(4) DEFAULT '0' NOT NULL
+);
