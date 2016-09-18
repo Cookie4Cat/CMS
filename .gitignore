@@ -1,6 +1,4 @@
 mysqli_connect.php
-kindeditor
-
-.idea/
-
-
+/.idea/
+.gitignore
+/kindeditor/
