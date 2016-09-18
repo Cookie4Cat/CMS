@@ -22,7 +22,6 @@ if(isset($_POST['name'])){
     $description = $_POST['description'];
     $is_used = $_POST['is_used'];
     $main_menu_id = $_POST['main_menu_id'];
-    require('../../mysqli_connect.php');  //连接数据库
     $query = "INSERT INTO child_menu(name,description,is_used,main_menu_id)
               VALUES ('$name','$description','$is_used','$main_menu_id')";
     $r = @mysqli_query($dbc, $query);      //执行插入语句
